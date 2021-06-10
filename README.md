@@ -33,3 +33,9 @@ SHOW TABLES LIKE 'permissions%';
 # Execute the Query While Selecting the Record
 
 mysql -u user -p -e 'SHOW TABLES FROM database_name;'
+
+# Execute the Query While Selecting the Record
+SELECT TABLE_NAME as "Table inside accountswhol " FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'accountswhol'
+or 
+Show Tables;
+
