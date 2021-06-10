@@ -15,3 +15,7 @@ This is a Simple Blog for Mysql Documentation
 1. default should be used when database is required perform any Operations
 2. default = current_timestamp
 3. default = current_timestamp
+
+# How to Complete Information of Information Schema in any Database (Table_schema)
+SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'accountswhol'
+SELECT create_time FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='your_database_name' and Table_name = 'your_table_name';
