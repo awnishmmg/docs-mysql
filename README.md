@@ -19,3 +19,17 @@ This is a Simple Blog for Mysql Documentation
 # How to Complete Information of Information Schema in any Database (Table_schema)
 SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'accountswhol'
 SELECT create_time FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA='your_database_name' and Table_name = 'your_table_name';
+
+# SHOW COMMANDS FOR ANY DATABASE
+
+mysql -u user -p;
+USE database_name;
+SHOW TABLES;
+SHOW FULL TABLES;
+SHOW TABLES FROM/IN database_name;
+SHOW TABLES LIKE pattern;
+SHOW TABLES LIKE 'permissions%';
+
+# Execute the Query While Selecting the Record
+
+mysql -u user -p -e 'SHOW TABLES FROM database_name;'
