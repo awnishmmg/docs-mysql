@@ -1,6 +1,13 @@
 # docs-mysql
 This is a Simple Blog for Mysql Documentation
+# Delete the Duplicate Record using Inner Joins
 
+DELETE c1 FROM master_mobile c1
+INNER JOIN master_mobile c2 
+WHERE
+    c1.id > c2.id AND 
+    c1.mobile = c2.mobile;
+   
 # Different to perform soft delete.
 1. use is_deleted and set default to 0 or 1
 2. use deleted_at and set default to NULL
